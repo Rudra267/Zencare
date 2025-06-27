@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cleaning Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff6fd;
+  margin: 0;
+  padding: 30px;
+}
+
+.page-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.left-sidebar {
+  background: #fff;
+  border-radius: 18px;
+  padding: 25px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  width: 300px;
+}
+
+.service-box {
+  background: #f5f5f5;
+  padding: 15px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.service-box img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.service-box p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.right-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.package-card {
+  background: #fff;
+  border: 2px solid #4CAF50;
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+}
+
+.package-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.label {
+  color: #4CAF50;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.package-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.desc {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.add-btn {
+  width: 45px;
+  height: 45px;
+  font-size: 22px;
+  color: #fff;
+  background: #1c1b20;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.bottom-link {
+  text-align: right;
+  margin-top: 15px;
+}
+
+.bottom-link a {
+  color: #22a722;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 900px) {
+  .page-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-sidebar {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .right-content {
+    width: 100%;
+  }
+}
+
+</style>
+<body>
+  <div class="page-wrapper">
+    <div class="left-sidebar">
+      <div class="service-box">
+        <img src="house.jpg" alt="Full House Cleaning" />
+        <p>Full House Cleaning</p>
+      </div>
+      <div class="service-box">
+        <img src="sofa.jpg" alt="Sofa, Carpet & Mattress Cleaning" />
+        <p>Sofa, Carpet & Mattress<br>Cleaning</p>
+      </div>
+      <div class="service-box">
+        <img src="bathroom.jpg" alt="Bathroom & Kitchen Cleaning" />
+        <p>Bathroom & Kitchen<br>Cleaning</p>
+      </div>
+    </div>
+
+    <div class="right-content">
+      <div class="package-card">
+        <div class="package-top">
+          <div>
+            <div class="label">PACKAGE</div>
+            <h3>Basic Full Home Cleaning</h3>
+            <p class="desc">Regular upkeep and general cleaning, including dusting, vacuuming, mopping, and surface cleaning in all rooms.</p>
+            <p class="price">₹2799/-</p>
+          </div>
+          <button class="add-btn">+</button>
+        </div>
+        <div class="bottom-link">
+          <a href="#">More Details</a>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <div class="package-top">
+          <div>
+            <div class="label">PACKAGE</div>
+            <h3>Deep Full Home Cleaning</h3>
+            <p class="desc">Thorough cleaning with deep vacuuming, upholstery care, machine scrubbing, and appliance interiors.</p>
+            <p class="price">₹3499</p>
+          </div>
+          <button class="add-btn">+</button>
+        </div>
+        <div class="bottom-link">
+          <a href="#">More Details</a>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <div class="package-top">
+          <div>
+            <div class="label">PACKAGE</div>
+            <h3>Unfurnished Apartment Basic Full Home Cleaning</h3>
+            <p class="desc">Regular upkeep of unfurnished spaces; includes sweeping, mopping, dusting, and surface cleaning.</p>
+            <p class="price">₹1999/-</p>
+          </div>
+          <button class="add-btn">+</button>
+        </div>
+        <div class="bottom-link">
+          <a href="#">More Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
